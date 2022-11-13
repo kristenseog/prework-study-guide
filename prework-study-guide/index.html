@@ -63,11 +63,12 @@
           <li>A link element creates the connection to the external file.</li>
           <li>A rel attribute specifies the relationship between the current document and the linked document resource.</li>
           <li>A href attribute specifies the location (URL) of the external resource and is using a relative path.</li>
+            <li> link rel="stylesheet" href="./assets/style.css" </li>
           <li>A .card designates this as a class selector</li>
           <li>Any HTML element assigned to the class, card, will gain these property assignments from the CSS.</li>
           <li>A section class="card" already contains the class attribute. Therefore, all four section elements on the page will contain the same property assignemnts according to the CSS rule.</li>
           <li>A HTML hexadecimal code defines the color.</li>
-          <li></li>
+          
           <li></li>
           <li></li>
         </ul>
@@ -95,6 +96,98 @@
         <h2>JavaScript</h2>
         <ul>
           <li>Enter your JavaScript notes here.</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>To declare a variable, var uniquename with = assigment operator to assign the specific datat taht we want stored in our variable.</li>
+          <li>A string are a sequence of character/values written within quatation marks "string,.." that incldues all the variables you declared. </li>
+          <li>Once you list the string, by refering to var will let you access to your strings.</li>
+            <li>var topics = "HTML", "CSS", "Git", "JavaScript";</li>
+          <li>A console.log method will let you see this var action by adding an argument to output a message to the web console.</li>
+          <li>A word console refers to a test environment that developers use to check out their code.</li>
+          <li>A .log() method is a set of instructions for computer to execute.</li>
+            <li>console.log(topics); is a command to check if the computer can execute your codes?!</li>
+          <li>Link script.js to index.html like you linked the stylesheet style.css to index.html.</li>
+            <li>to add stylesheet style css to index.html, we added link element inside the head element 
+              link rel="stylesheet" href="./assets/style.css" </li>
+            <li>But, to add JavaScript script.js is linked inside the body element after footer and before closing /body element. 
+              <script> src="./assets/script.js"> </script> </li>
+          <li>Use Chrome DevTools to view console.log output. 
+                First open the index.html file by right-clicking "Open with Live Server"
+                Then, right-click the page/brower and select "Inspect" and check its console tab for output.
+                    or use shortcut command+shift+I
+          </li>
+          <li>A control flow is the order in which a computer executes code in a script, running top to bottom.</li>
+          <li>Be intentional about the order/how we set up cod ein a JS file.</li>
+          <li>Ways to control the order/flow, we can use conditional statements and for loops.</li>
+          <li>A conditional statment is JS focus on the if statements. 
+                If statement is a way of introducing decision-making into our code.
+                Using If to only excute if the statemetn meets the condition or it is true.
+                
+                       if (condition) {
+                            // block of code to be excuted if condtion is truthy
+                          } else if (2nd condition) {
+                            // block of code
+                          }
+                          falsy value if it is one of following values: 0, -0, on, "", null, undefined, NaN or a Boolean data typed false value. 
+                          truthy value if all other values, including a boolean data typed with true value.
+          </li>
+          <li>An array is a way to store a group of related data in a variable.
+                An array is a single variable that is used to hold a group of data. ie. shape var = ["various shapes", "or other types of data such as strings, numbers,"];
+                An index is a location number of the data item to the order writtein in the array for identification, starting with 0.
+          </li>
+          <li>A for loop is to perform a task on each piece of the data uisng just a few lines of code.</li>
+            <li>Used with if conditional statement. 
+              A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be excuted over an over.</li>
+              The coputer will go through each of the item in the array until there are no more items left.
+              To use the for loop, we need item index and array's length.
+              for(var x = 0; x < shapes.length; x++) {
+                // code block such as 
+                console/log(shape[x]);
+              }
+
+          <li>Use /* before and */ after the block of code to comment out a statement, make the statemetn in active without deletinng it.</li>
+          
+          <li>A javascript function is a set of instructions that tells teh computer how to perform a certain task. 
+            Compared to for loop, a function do not automatically execute when teh JavaSCript file is run. 
+            Instead, you must call a function by name in order to execute it.
+            A function makes teh code more easily reusable because we can call it as many times as we need. You can control the flow.
+            A function groups the task into one and when you call a function, the computer executes all the necessary steps to complete the task.
+            1. Define a function by function declaration, using function keyword and code block/ function body for instructions. 
+              function name() {
+                // code block
+              }
+            2. Call the function by writing the function name(); function name followed by paranthesis and semicolon.
+          </li>
+          <li>function listTopics vs selectTopics</li>
+          <li>To randomize our selection, we need to use math.random() function, which will select a random number.</li>
+                var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+                var randomTopic = topics[Math.floor(Math.random() * topics.length)];
+                                  math.floor() and math.random() are both properties of JS's built-in math object that is used together to generate a randon number.
+              
+                function listTopics() {
+                  for (var x = 0; x < topics.length; x++) {
+                    console.log(topics[x]);
+                    }
+                 }            
+                
+                function selectTopics() {
+                  if (randomTopic === 'HTML') {
+                    console.log("Let's study HTML!");
+                  } else if (randomTopic === 'CSS') {
+                    console.log("Let's study CSS!");
+                  } else if (randomTopic === 'Git') {
+                    console.log("Let's study Git!");
+                  } else if (randomTopic === 'JavaScript') {
+                    console.log("Let's study JavaScript!");
+                  } else {
+                    console.log('Please try again!');
+                  }
+                 }
+                 
+                 console.log('Here are the topics we learned through Prework:');
+                 listTopics();
+                 console.log('Which topic should we study first?');
+                 selectTopic();
+                }                 
           <li></li>
           <li></li>
           <li></li>
