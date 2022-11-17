@@ -98,3 +98,8 @@ console.log('Which topic should we study first?');
 selectTopic();
 
 
+//adding welcomeEl using innerText
+var welcomeEl = document.getElementById("welcome-el")
+var name = "Kristen!"
+var greeting = "Welcome back! Let's keep adding notes, "
+welcomeEl.innerText = greeting + name 
